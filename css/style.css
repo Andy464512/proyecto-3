@@ -1,0 +1,104 @@
+body{
+    background-color: yellow;
+}
+.padre {
+  background-color: yellow;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "caja1 caja2 caja3"
+    "figura figura caja4"
+    "figura figura caja41"
+    "figura figura caja42"
+    "caja5 caja6 caja7"
+    "caja5 caja9 caja7";
+}
+.titulo { grid-area: titulo; background-color: green;}
+.caja1 {
+    grid-area: caja1;
+    background-color: green;
+}
+.caja2 { grid-area: caja2; background-color: green; }
+.caja3 { grid-area: caja3; background-color: green; }
+.figura { grid-area: figura; background-color: green; }
+.caja4 { grid-area: caja4; background-color: green; }
+.caja41 { grid-area: caja41; background-color: green; }
+.caja42 { grid-area: caja42; background-color: green; }
+.caja5 { grid-area: caja5; background-color: green; }
+.caja6 { grid-area: caja6; background-color: green; }
+.caja7 { grid-area: caja7; background-color: green;
+        text-align: center;
+}
+.caja9 { grid-area: caja9; background-color: green; }
+.figura1{
+    position:relative;
+    width:80px;
+    height:80px;
+    margin:auto;
+}
+.cabeza{
+    width:28px;
+    height:28px;
+    background:blue;
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    left:26px;
+}
+.cuerpo{
+    width:45px;
+    height:45px;
+    background:blue;
+    border-radius:50%;
+    position:absolute;
+    top:30px;
+    left:18px;
+}
+.oreja1{
+    width:10px;
+    height:10px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:18px;
+}
+.oreja2{
+    width:10px;
+    height:10px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:50px;
+}
+.ojo1{
+    width:3px;
+    height:3px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:8px;
+    left:6px;
+}
+.ojo2{
+    width:3px;
+    height:3px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:8px;
+    left:18px;
+}
+.nariz{
+    width:3px;
+    height:3px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:14px;
+    left:12px;
+}
